@@ -6,7 +6,7 @@ The project covers the full database design lifecycle: **conceptual modeling (ER
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Project Overview](#-project-overview)
 - [Repository Structure](#-repository-structure)
@@ -20,7 +20,7 @@ The project covers the full database design lifecycle: **conceptual modeling (ER
 
 ---
 
-## 🎯 Project Overview
+##  Project Overview
 
 The system models the operations of a car rental company with multiple branches:
 
@@ -56,7 +56,7 @@ car-rental-database/
 └── README.md
 ```
 
-## 🗄️ Database Schema
+##  Database Schema
 
 Twelve tables implement the ER model (Milestone 3 version):
 
@@ -89,7 +89,7 @@ Twelve tables implement the ER model (Milestone 3 version):
 | **MS2** | Logical design & implementation | ER → relational mapping, DDL scripts, sample data, constraint demonstrations → [`docs/milestone-2`](docs/milestone-2), [`sql/milestone-2`](sql/milestone-2) |
 | **MS3** | Refinement & application layer | Normalization to 3NF (`Modellinfo` decomposition), PL/SQL triggers, Python connectivity → [`docs/milestone-3`](docs/milestone-3), [`sql/milestone-3`](sql/milestone-3), [`notebooks`](notebooks) |
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -111,7 +111,7 @@ Create the schema (use the **milestone-3** version — it is the normalized, fin
 @sql/milestone-3/01_create_schema.sql
 ```
 
-## ▶️ Running the Demo
+##  Running the Demo
 
 ```sql
 @sql/milestone-3/02_triggers_demo.sql   -- triggers + sample workflow
@@ -125,7 +125,7 @@ To reset everything:
 
 > **Note:** run the drop script *before* re-running the create script — the DDL scripts assume a clean schema.
 
-## 🐍 Python Connectivity
+##  Python Connectivity
 
 The notebook [`notebooks/DBConnection.ipynb`](notebooks/DBConnection.ipynb) connects to Oracle via [`python-oracledb`](https://python-oracledb.readthedocs.io/).
 
@@ -137,7 +137,7 @@ jupyter notebook notebooks/DBConnection.ipynb
 
 Credentials are read from environment variables (`ORACLE_USER`, `ORACLE_PASSWORD`, `ORACLE_DSN`) — **never commit real credentials**. The university database additionally requires an active **UniVie VPN** connection.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |---|---|
